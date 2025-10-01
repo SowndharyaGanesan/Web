@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="assets/media/images/favicon.jpg">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/layouts/header.css">
+  <link rel="stylesheet" href="assets/css/layouts/footer.css">
+  <link rel="stylesheet" href="assets/css/layouts/sidebar.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/mediaquery.css">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/components/component.css">
+  <link rel="stylesheet" href="assets/css/Pages/product.css">
+  <link rel="stylesheet" href="assets/css/Pages/contact.css">
+  
+  <link rel="stylesheet" href="assets/css/Pages/service.css">
+  <link rel="stylesheet" href="assets/vendor/aos/css/aos.css">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative ">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid ">
+
+          <!-- Brand Tittle  -->
+          <a class="navbar-brand " href="/index.html">Interium</a>
+
+          <!-- nav-items -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto me-auto">
+              <li class="nav-item me-3">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown  me-3">
+                <a class="nav-link dropbtn" onclick="myFunction(event)" href="#">Services
+                  <i class="fa-solid fa-angle-down ps-1"></i>
+                </a>
+                <div class="drop-menu">
+                  <div class="row mx-0">
+                    <div class="col-md-12 p-0">
+                      <div class="menu-container service-menu">
+                        <div class="row">
+                          <div class="col ">
+
+                          
+
+
+
+                            <ul class="text-nowrap p-0">
+                              <li class="border-bottom pb-2">
+                                <a href="#" class="text-decoration-none ">Architecture</a>
+                              </li>
+                              <li class="border-bottom py-2">
+                                <a href="#" class="text-decoration-none ">Interior Work</a>
+                              </li>
+                              <li class="border-bottom py-2">
+                                <a href="#" class="text-decoration-none ">Retail Designs</a>
+                              </li>
+                              <li class="border-bottom py-2">
+                                <a href="#" class="text-decoration-none ">2D/3D Layouts</a>
+                              </li>
+                              <li class="border-bottom py-2">
+                                <a href="#" class="text-decoration-none ">Interior Design</a>
+                              </li>
+                              <li class=" py-2">
+                                <a href="#" class="text-decoration-none ">Decoration art</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+
+                </div>
+              </li>    
+              <!-- dropdown -->
+              <li class="nav-item  me-3">
+                <a class="nav-link dropbtn" onclick="myFunction(event)" href="/project.html">Projects
+                  <!-- <i class="fa-solid fa-angle-down ps-1"></i> -->
+                </a>
+                <!-- <div class="drop-menu">
+                  <div class="row mx-0">
+                    <div class="col-md-12 p-0">
+                      <div class="menu-container">
+                        <div class="row">
+                          <div class="col ">
+
+
+                            <ul class="text-nowrap p-0">
+                              <li class="border-bottom pb-2"><a href="/project.html"
+                                  class="text-decoration-none ">Prestige
+                                  Villa</a>
+                              </li>
+                              <li class="border-bottom py-2"><a href="/project.html" class="text-decoration-none ">Hall
+                                  Theatre
+                                  Building</a>
+                              </li>
+                              <li class="py-2"><a href="/project.html" class="text-decoration-none ">Family
+                                  Appartment</a></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+
+                </div> -->
+              </li>
+
+              <li class="nav-item me-3">
+                <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="/gallery.html">Gallery</a>
+              </li>
+
+            </ul>
+          </div>
+
+          <!-- search icon -->
+          <div class="icons d-flex ms-lg-0  ms-auto ms-sm-auto  ms-md-auto ">
+            <a href="" role="button" class=" toggle-search"><i class="bi bi-search icon "></i></a>
+          </div>
+
+          <!-- collapsible search box -->
+          <div class="searchbar left" id="SearchBox">
+            <div class="card card-body p-0">
+              <input class="search " type="text" placeholder="Search...">
+            </div>
+          </div>
+
+          <a class="cta-btn d-none d-lg-block ms-2" role="button" href="contact.html">Get a Quote!</a>
+
+          <!-- toggle button -->
+          <button id="toggleButton" class="navbar-toggler border-0 " type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#sidebarDrawer" aria-controls="sidebarDrawer">
+            <i id="buttonIcon" class="fas fa-align-left "></i>
+          </button>
+
+
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--drawer offcanvas-->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarDrawer" aria-labelledby="sidebarDrawerLabel">
+
+    <div class="offcanvas-body p-0">
+      <div>
+        <ul class="m-0 p-0 menu-items">
+          <li class="mb-2">
+            <a href="/index.html" clas="py-3 px-5">Home</a>
+          </li>
+          <li class="mb-2">
+            <a href="/project.html" clas="py-3 px-5">Projects</a>
+          </li>
+          <li class="mb-2">
+            <a href="/service.html" clas="py-3 px-5">Services</a>
+          </li>
+          <li class="mb-2">
+            <a href="/gallery.html" clas="py-3 px-5">Gallery</a>
+          </li>
+          <li class="mb-2">
+            <a href="/contact.html" class="py-3 pe-5 accent-color"  >Get a Quote</a>
+          </li>
+
+        </ul>
+        <div class="drawer utility-links d-flex  flex-column gap-3 py-3">
+          <!-- <a class="text-decoration-none text-white " href=""><i class="fa-solid fa-user pe-4"></i>Login</a> -->
+          <ul class="mx-0 px-0 ">
+            <li class="p-0">
+              <a href="" class="pe-3">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <a href="" class="pe-3 ps-0">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="" class="px-0">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tittle bar -->
+  <section id="tittlebar" class="tittlebar section">
+    <div class="container-fluid p-0 ">
+      <div class="row tittlebar-wrapper position-relative m-0 ">
+        <!-- Tittle -->
+        <div class="tittle-wrapper my-auto text-center">
+          <h1 class="service entry-tittle"> Our Services</h1>
+        </div>
+
+        <!-- Bread Crumps -->
+        <div class="breadcrumb-wrapper">
+          <div class="container">
+            <div class="breadcrumb-inner">
+              <span>
+                <a href="index.html" class="home">
+                  <i class="bi bi-house-door"></i> &nbsp;&nbsp;Home
+                </a>
+              </span>
+              <span class="bread-sep">&nbsp; / &nbsp;</span>
+              <span>
+                <span class="current-page text-nowrap">Services</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+  <section id="service-content" class="service-content section">
+    <div class="container">
+      <div class="row">
+
+        <!-- left sidebarbar -->
+        <div class="col-lg-3">
+          <div class="row ">
+            <!-- sidebar left -->
+            <aside id="sidebar-left" class="services-wrapper ">
+              <!-- servise list bar -->
+              <aside class="services-sidebar overflow-hidden">
+                <h3 class="servicebar-tittle">More Services</h3>
+                <div class="srvice-list">
+                  <ul class=" " id="pills-tab" role="tablist">
+                    <li class="tab-item" role="presentation">
+                      <a class="tab-link   active position-relative" id="pills-interior-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-interior" type="button" role="tab" aria-controls="pills-interior"
+                        aria-selected="true">Interior Work</a>
+                    </li>
+
+                    <li class="tab-item" role="presentation">
+                      <a class="tab-link  position-relative" id="pills-arch-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-arch" type="button" role="tab" aria-controls="pills-arch"
+                        aria-selected="false">Architecture</a>
+                    </li>
+                    <li class="tab-item" role="presentation">
+                      <a class="tab-link  position-relative" id="pills-retail-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-retail" type="button" role="tab" aria-controls="pills-retail"
+                        aria-selected="false">Retail Designs</a>
+                    </li>
+                    <li class="tab-item" role="presentation">
+                      <a class="tab-link  position-relative" id="pills-Layouts-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-Layouts" type="button" role="tab" aria-controls="pills-Layouts"
+                        aria-selected="false">2D/3D Layouts</a>
+                    </li>
+                    <li class="tab-item" role="presentation">
+                      <a class="tab-link  position-relative" id="pills-InDesign-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-InDesign" type="button" role="tab" aria-controls="pills-InDesign"
+                        aria-selected="false">Interior Design</a>
+                    </li>
+                    <li class="tab-item" role="presentation">
+                      <a class="tab-link  position-relative" id="pills-decoration-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-decoration" type="button" role="tab" aria-controls="pills-decoration"
+                        aria-selected="false">Decoration art</a>
+                    </li>
+                  </ul>
+                </div>
+              </aside>
+            </aside>
+          </div>
+
+
+
+        </div>
+        <!-- right side content area -->
+        <div class="col-lg-9 content-area ">
+
+          <div class="tab-content   p-3  " id="pills-tabContent">
+
+
+            <!-- tab content 1 -->
+            <div class="tab-pane show active fade content-wrapper" id="pills-interior" role="tabpanel"
+              aria-labelledby="pills-interior-tab">
+
+
+              <section class="hero-section">
+                <div class="heading mb-3 position-relative">
+                  <h3 class="heading-tittle">Creative Solutions By Inoterior Professional</h3>
+                  <div class="img-wrapper position-relative">
+                    <img src="/assets/media/images/service/Arch-service-banner-img.png" alt="" width="799" height="350">
+                  </div>
+
+
+
+                </div>
+              </section>
+              <section class="top-section">
+                <!-- Para one -->
+                <p class=" mb-3"><span class="since">Since 1999,</span>
+                  we have been providing great flooring solutions and customer service for homeowners and commercial
+                  clients. among flooring materials, none is more elegant and luxurious than natural stone. Give your
+                  consent, we design a
+                  <strong>perfect bend choose</strong> the style, we complete with our file.
+                </p>
+                <!-- Para two -->
+                <p>A wonderful
+                  <u>
+                    <a href="">serenity has taken</a>
+                  </u>&nbsp;possession of my entire soul, like these sweet mornings of spring which I enjoy with my
+                  whole heart and its very blessed.
+                </p>
+
+              </section>
+              <section class="Bullets py-2 mb-3">
+                <div class="bullet-points row ">
+                  <div class="col-lg-6  mb-2 mb-lg-0 ">
+                    <div class="bullet-box-heading d-flex gap-3 mb-3">
+                      <div class="icon">
+                        <i class="bi bi-check-square"></i>
+                      </div>
+                      <div>
+                        <h2 class="m-0">Use of Interior</h2>
+                        <div class="sub-text">Giving your home a new style every style</div>
+                      </div>
+                    </div>
+                    <ul class="about-list-items p-0 m-0">
+                      <li class="about-list-item d-flex">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">We provide high quality design
+                          services.</span>
+                      </li>
+                      <li class="about-list-item ">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">Project on time and Latest Design.</span>
+                      </li>
+                      <li class="about-list-item ">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">Scientific Skills For getting a better
+                          result.</span>
+                      </li>
+                      <li class="about-list-item ">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">Renovations Benefit of Service</span>
+                      </li>
+                      <li class="about-list-item ">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">We are confident about our projects.</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 my-auto d-flex ">
+                    <img src="assets/media/images/service/service-bullet-img1.png" alt="">
+                  </div>
+                </div>
+              </section>
+              <section class="Bullets py-2">
+                <div class="bullet-points row ">
+                  <div class="col-lg-6 my-auto d-flex justify-content-start mb-2 mb-lg-0">
+                    <img src="assets/media/images/service/service-bullet-img1.png" alt="">
+                  </div>
+                  <div class="col-lg-6 ">
+                    <div class="bullet-box-heading d-flex gap-3 mb-3">
+                      <div class="icon">
+                        <i class="bi bi-check-square"></i>
+                      </div>
+                      <div>
+                        <h2 class="m-0">Use of Interior</h2>
+                        <div class="sub-text">Giving your home a new style every style</div>
+                      </div>
+                    </div>
+                    <ul class="about-list-items p-0 m-0">
+                      <li class="about-list-item">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">We provide high quality design
+                          services.</span>
+                      </li>
+                      <li class="about-list-item ">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">Project on time and Latest Design.</span>
+                      </li>
+                      <li class="about-list-item ">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">Scientific Skills For getting a better
+                          result.</span>
+                      </li>
+                      <li class="about-list-item ">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">Renovations Benefit of Service</span>
+                      </li>
+                      <li class="about-list-item ">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">We are confident about our projects.</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </section>
+
+
+
+
+
+
+
+
+            </div>
+            <!-- tab content 2 -->
+            <div class="tab-pane fade  content-wrapper" id="pills-arch" role="tabpanel"
+              aria-labelledby="pills-arch-tab">
+              <section class="hero-section">
+                <div class="heading mb-3">
+                  <!-- <div class="position-relative">
+                              <h3 class="heading-tittle">Creative Solutions By Inoterior Professional
+                                Designers</h3>
+                             </div> -->
+                  <div>
+                    <div class="img-wrapper position-relative mb-3 ">
+                      <img src="/assets/media/images/service/Int-service-banner-img.jpg" class=" " alt="" width="799"
+                        height="350">
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="about-service-section py-4 ">
+                <h3 class="">About Interior Services</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio quas maiores id repellat dolores
+                  labore quae, autem pariatur amet dolore, accusantium ea, necessitatibus alias ad incidunt quis
+                  explicabo consequuntur aliquam repudiandae.</p><br>
+                <p>Qui, tempore sapiente? Sit officiis eius consequatur id et voluptas, corporis harum porro, voluptatem
+                  suscipit iste vitae, illum ducimus impedit quam. In laboriosam ipsam, eum minus ratione dicta
+                  temporibus sit perspiciatis quis sed asperiores perferendis itaque. Expedita, praesentium molestiae!
+                  Autem nemo animi, cum quas nulla, tempora id optio mollitia laborum inventore nobis neque, ratione
+                  vitae eius quidem facilis. Assumenda blanditiis modi tempora laboriosam maxime quos temporibus
+                  provident ad mollitia?</p>
+              </section>
+              <section class="Service-Employees  border-top py-4">
+                <div class="row g-3 ">
+                  <div class="emp-img  p-0 col-lg-6 d-lg-none">
+                    <img src="assets/media/images/service/service-emp-1.jpg" alt="emp-img" width="470" height="550"
+                      class=" border border-3">
+                  </div>
+                  <div class="content-text  col-lg-6 ">
+                    <h3 class="">Fully Trained Employees</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas doloremque culpa labore, neque
+                      dolorum hic nesciunt fuga voluptatem tempora a voluptatum saepe eligendi laudantium praesentium
+                      modi deserunt quasi nobis fugit eveniet ducimus. Consequatur saepe nihil alias minima laudantium
+                      esse quibusdam eius aut eligendi veritatis ad modi, dignissimos soluta voluptates ab!</p><br>
+                    <a href="#" class="readmore-btn">Read More</a>
+                  </div>
+                  <div class="emp-img p-0 d-none d-lg-block col-lg-6 text-end">
+                    <img src="assets/media/images/service/service-emp-1.jpg" alt="emp-img" width="470" height="550"
+                      class=" border border-3">
+                  </div>
+                </div>
+
+              </section>
+              <section class="Service-Employees  border-top py-4">
+                <div class="row g-3">
+                  <div class="emp-img p-0  col-lg-6">
+                    <img src="assets/media/images/service/service-emp-2.jpg" alt="emp-img" width="470" height="550"
+                      class=" border border-3">
+                  </div>
+                  <div class="content-text  col-lg-6  ms-auto">
+                    <h3 class="">Fully Trained Employees</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas doloremque culpa labore, neque
+                      dolorum hic nesciunt fuga voluptatem tempora a voluptatum saepe eligendi laudantium praesentium
+                      modi deserunt quasi nobis fugit eveniet ducimus. Consequatur saepe nihil alias minima laudantium
+                      esse quibusdam eius aut eligendi veritatis ad modi, dignissimos soluta voluptates ab!</p><br>
+                    <a href="#" class="readmore-btn">Read More</a>
+                  </div>
+
+                </div>
+
+              </section>
+
+            </div>
+
+            <!-- tab content 3 -->
+            <div class="tab-pane fade content-wrapper" id="pills-retail" role="tabpanel"
+              aria-labelledby="pills-retail-tab">
+
+
+              <section class="hero-section">
+                <div class="heading mb-3 position-relative mb-4">
+
+                  <div class="img-wrapper position-relative ">
+                    <img src="/assets/media/images/service/retail-service-banner.jpg" alt="" width="799" height="350">
+                  </div>
+
+
+
+                </div>
+              </section>
+              <section class="top-section">
+                <h3 class="heading-tittle">Creative Solutions By Inoterior Professional</h3>
+                <!-- Para one -->
+                <p class=" mb-3">Lorem, ipsum.
+                  we have been providing great flooring solutions and customer service for homeowners and commercial
+                  clients. among flooring materials, none is more elegant and luxurious than natural stone. Give your
+                  consent, we design a
+                  <strong>perfect bend choose</strong> the style, we complete with our file.
+                </p>
+                <!-- Para two -->
+                <p>A wonderful
+                  <u>
+                    <a href="">clasical latin</a>
+                  </u>&nbsp;possession of my entire soul, like these sweet mornings of spring which I enjoy with my
+                  whole heart and its very blessed.
+                </p>
+
+              </section>
+              <section class="service-advantages mt-4">
+                <h3 class="heading-tittle">Service Advantages</h3>
+                <div>
+                  <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin literature from 45 BC, making it
+                    <strong>over 2000 years old</strong>.
+                  </p>
+                </div>
+              </section>
+   <section class="two-boxes">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="box-wrap pe-3 position-relative pb-3">
+          <div class="box  ">
+         <div class="inner-box">
+             <div class="inner-box-icon mb-4">
+              <div class="icon">
+                <img src="assets/media/images/service/house-blueprint.png" alt="">
+              </div>
+             </div>
+             <div class="inner-box-text">
+                  <h2 class="inner-box-heading">Qualified Candidates</h2>
+                  <div class="inner-box-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+             </div>
+
+             <div class="inner-box-btn ">
+              
+                <a href="" >Read More</a>
+              
+                 
+             </div>
+         </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="box-wrap pe-3 position-relative">
+          <div class="box  ">
+         <div class="inner-box">
+             <div class="inner-box-icon mb-4">
+              <div class="icon">
+                <img src="assets/media/images/service/destination.png" alt="">
+              </div>
+             </div>
+             <div class="inner-box-text">
+                  <h2 class="inner-box-heading">Best Platform</h2>
+                  <div class="inner-box-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+             </div>
+
+             <div class="inner-box-btn ">
+              
+                <a href="" >Read More</a>
+              
+                 
+             </div>
+         </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   </section>
+
+
+
+
+
+
+
+
+            </div>
+
+             <!-- tab content 4  -->
+             <div class="tab-pane fade content-wrapper" id="pills-Layouts" role="tabpanel"
+              aria-labelledby="pills-interior-tab">
+
+
+              <section class="hero-section">
+                <div class="heading mb-3 position-relative">
+                  <h3 class="heading-tittle">Creative Solutions By Inoterior Professional</h3>
+                  <div class="img-wrapper position-relative">
+                    <img src="/assets/media/images/service/Arch-service-banner-img.png" alt="" width="799" height="350">
+                  </div>
+
+
+
+                </div>
+              </section>
+              <section class="top-section">
+                <!-- Para one -->
+                <p class=" mb-3"><span class="since">Since 1999,</span>
+                  we have been providing great flooring solutions and customer service for homeowners and commercial
+                  clients. among flooring materials, none is more elegant and luxurious than natural stone. Give your
+                  consent, we design a
+                  <strong>perfect bend choose</strong> the style, we complete with our file.
+                </p>
+                <!-- Para two -->
+                <p>A wonderful
+                  <u>
+                    <a href="">serenity has taken</a>
+                  </u>&nbsp;possession of my entire soul, like these sweet mornings of spring which I enjoy with my
+                  whole heart and its very blessed.
+                </p>
+
+              </section>
+              <section class="Bullets py-2 mb-3">
+                <div class="bullet-points row ">
+                  <div class="col-lg-6  mb-2 mb-lg-0 ">
+                    <div class="bullet-box-heading d-flex gap-3 mb-3">
+                      <div class="icon">
+                        <i class="bi bi-check-square"></i>
+                      </div>
+                      <div>
+                        <h2 class="m-0">Use of Interior</h2>
+                        <div class="sub-text">Giving your home a new style every style</div>
+                      </div>
+                    </div>
+                    <ul class="about-list-items p-0 m-0">
+                      <li class="about-list-item d-flex">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">We provide high quality design
+                          services.</span>
+                      </li>
+                      <li class="about-list-item ">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">Project on time and Latest Design.</span>
+                      </li>
+                      <li class="about-list-item ">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">Scientific Skills For getting a better
+                          result.</span>
+                      </li>
+                      <li class="about-list-item ">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">Renovations Benefit of Service</span>
+                      </li>
+                      <li class="about-list-item ">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">We are confident about our projects.</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 my-auto d-flex ">
+                    <img src="assets/media/images/service/service-bullet-img1.png" alt="">
+                  </div>
+                </div>
+              </section>
+              <section class="Bullets py-2">
+                <div class="bullet-points row ">
+                  <div class="col-lg-6 my-auto d-flex justify-content-start mb-2 mb-lg-0">
+                    <img src="assets/media/images/service/service-bullet-img1.png" alt="">
+                  </div>
+                  <div class="col-lg-6 ">
+                    <div class="bullet-box-heading d-flex gap-3 mb-3">
+                      <div class="icon">
+                        <i class="bi bi-check-square"></i>
+                      </div>
+                      <div>
+                        <h2 class="m-0">Use of Interior</h2>
+                        <div class="sub-text">Giving your home a new style every style</div>
+                      </div>
+                    </div>
+                    <ul class="about-list-items p-0 m-0">
+                      <li class="about-list-item">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">We provide high quality design
+                          services.</span>
+                      </li>
+                      <li class="about-list-item ">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">Project on time and Latest Design.</span>
+                      </li>
+                      <li class="about-list-item ">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">Scientific Skills For getting a better
+                          result.</span>
+                      </li>
+                      <li class="about-list-item ">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">Renovations Benefit of Service</span>
+                      </li>
+                      <li class="about-list-item ">
+                        <span class="about-list-item-icon"><i class="fa-regular fa-circle-dot"></i></span>
+                        <span class="about-list-item-text text-lg-nowrap">We are confident about our projects.</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+              </section>
+
+
+
+
+
+
+
+
+            </div>
+           <!-- tab content 5 -->
+           <div class="tab-pane fade  content-wrapper" id="pills-InDesign" role="tabpanel"
+           aria-labelledby="pills-arch-tab">
+           <section class="hero-section">
+             <div class="heading mb-3">
+               <!-- <div class="position-relative">
+                           <h3 class="heading-tittle">Creative Solutions By Inoterior Professional
+                             Designers</h3>
+                          </div> -->
+               <div>
+                 <div class="img-wrapper position-relative mb-3 ">
+                   <img src="/assets/media/images/service/Int-service-banner-img.jpg" class=" " alt="" width="799"
+                     height="350">
+                 </div>
+               </div>
+             </div>
+           </section>
+           <section class="about-service-section py-4 ">
+             <h3 class="">About Interior Services</h3>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio quas maiores id repellat dolores
+               labore quae, autem pariatur amet dolore, accusantium ea, necessitatibus alias ad incidunt quis
+               explicabo consequuntur aliquam repudiandae.</p><br>
+             <p>Qui, tempore sapiente? Sit officiis eius consequatur id et voluptas, corporis harum porro, voluptatem
+               suscipit iste vitae, illum ducimus impedit quam. In laboriosam ipsam, eum minus ratione dicta
+               temporibus sit perspiciatis quis sed asperiores perferendis itaque. Expedita, praesentium molestiae!
+               Autem nemo animi, cum quas nulla, tempora id optio mollitia laborum inventore nobis neque, ratione
+               vitae eius quidem facilis. Assumenda blanditiis modi tempora laboriosam maxime quos temporibus
+               provident ad mollitia?</p>
+           </section>
+           <section class="Service-Employees  border-top py-4">
+             <div class="row g-3 ">
+               <div class="emp-img  p-0 col-lg-6 d-lg-none">
+                 <img src="assets/media/images/service/service-emp-1.jpg" alt="emp-img" width="470" height="550"
+                   class=" border border-3">
+               </div>
+               <div class="content-text  col-lg-6 ">
+                 <h3 class="">Fully Trained Employees</h3>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas doloremque culpa labore, neque
+                   dolorum hic nesciunt fuga voluptatem tempora a voluptatum saepe eligendi laudantium praesentium
+                   modi deserunt quasi nobis fugit eveniet ducimus. Consequatur saepe nihil alias minima laudantium
+                   esse quibusdam eius aut eligendi veritatis ad modi, dignissimos soluta voluptates ab!</p><br>
+                 <a href="#" class="readmore-btn">Read More</a>
+               </div>
+               <div class="emp-img p-0 d-none d-lg-block col-lg-6 text-end">
+                 <img src="assets/media/images/service/service-emp-1.jpg" alt="emp-img" width="470" height="550"
+                   class=" border border-3">
+               </div>
+             </div>
+
+           </section>
+           <section class="Service-Employees  border-top py-4">
+             <div class="row g-3">
+               <div class="emp-img p-0  col-lg-6">
+                 <img src="assets/media/images/service/service-emp-2.jpg" alt="emp-img" width="470" height="550"
+                   class=" border border-3">
+               </div>
+               <div class="content-text  col-lg-6  ms-auto">
+                 <h3 class="">Fully Trained Employees</h3>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas doloremque culpa labore, neque
+                   dolorum hic nesciunt fuga voluptatem tempora a voluptatum saepe eligendi laudantium praesentium
+                   modi deserunt quasi nobis fugit eveniet ducimus. Consequatur saepe nihil alias minima laudantium
+                   esse quibusdam eius aut eligendi veritatis ad modi, dignissimos soluta voluptates ab!</p><br>
+                 <a href="#" class="readmore-btn">Read More</a>
+               </div>
+
+             </div>
+
+           </section>
+
+         </div>
+
+          <!-- tab content 6 -->
+          <div class="tab-pane fade content-wrapper" id="pills-decoration" role="tabpanel"
+          aria-labelledby="pills-retail-tab">
+
+
+          <section class="hero-section">
+            <div class="heading mb-3 position-relative mb-4">
+
+              <div class="img-wrapper position-relative ">
+                <img src="/assets/media/images/service/retail-service-banner.jpg" alt="" width="799" height="350">
+              </div>
+
+
+
+            </div>
+          </section>
+          <section class="top-section">
+            <h3 class="heading-tittle">Creative Solutions By Inoterior Professional</h3>
+            <!-- Para one -->
+            <p class=" mb-3">Lorem, ipsum.
+              we have been providing great flooring solutions and customer service for homeowners and commercial
+              clients. among flooring materials, none is more elegant and luxurious than natural stone. Give your
+              consent, we design a
+              <strong>perfect bend choose</strong> the style, we complete with our file.
+            </p>
+            <!-- Para two -->
+            <p>A wonderful
+              <u>
+                <a href="">clasical latin</a>
+              </u>&nbsp;possession of my entire soul, like these sweet mornings of spring which I enjoy with my
+              whole heart and its very blessed.
+            </p>
+
+          </section>
+          <section class="service-advantages mt-4">
+            <h3 class="heading-tittle">Service Advantages</h3>
+            <div>
+              <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                classical Latin literature from 45 BC, making it
+                <strong>over 2000 years old</strong>.
+              </p>
+            </div>
+          </section>
+<section class="two-boxes">
+<div class="row">
+  <div class="col-lg-6">
+    <div class="box-wrap pe-3 position-relative">
+      <div class="box  ">
+     <div class="inner-box">
+         <div class="inner-box-icon mb-4">
+          <div class="icon">
+            <img src="assets/media/images/service/house-blueprint.png" alt="">
+          </div>
+         </div>
+         <div class="inner-box-text">
+              <h2 class="inner-box-heading">Qualified Candidates</h2>
+              <div class="inner-box-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+         </div>
+
+         <div class="inner-box-btn ">
+          
+            <a href="" >Read More</a>
+          
+             
+         </div>
+     </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="box-wrap pe-3 position-relative">
+      <div class="box  ">
+     <div class="inner-box">
+         <div class="inner-box-icon mb-4">
+          <div class="icon">
+            <img src="assets/media/images/service/destination.png" alt="">
+          </div>
+         </div>
+         <div class="inner-box-text">
+              <h2 class="inner-box-heading">Best Platform</h2>
+              <div class="inner-box-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+         </div>
+
+         <div class="inner-box-btn ">
+          
+            <a href="" >Read More</a>
+          
+             
+         </div>
+     </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+        </div>
+
+            
+
+
+          </div>
+          
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Interium</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Architecture</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Interior Design</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Decoration Art</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Reatil Designs</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">2D/3D Layouts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="" method="post" class="newsletter-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Interium</strong> <span>All Rights Reserved</span></p>
+
+    </div>
+
+</footer>
+
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big ">
+      <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+      </svg>
+    </div>
+    
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+      </svg>
+    </div>
+  </div>
+
+
+  <div id="preloader"></div>
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src= "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script> 
+  <script src="https://kit.fontawesome.com/fb1bad45a7.js" crossorigin="anonymous"></script>
+  <script src="assets/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+  <script src="./assets/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="/assets/vendor/slick-1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="assets/js/index.js"></script>
+  <script src="assets/js/carousel.js"></script>
+  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+  <script src="assets/vendor/aos/js/aos.js"></script>
+</body>
+
+</html>

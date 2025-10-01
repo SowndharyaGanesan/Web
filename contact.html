@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interium</title>
+  <link rel="icon" type="image/x-icon" href="assets/media/images/favicon.jpg">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/mediaquery.css">
+  <link rel="stylesheet" href="assets/css/layouts/header.css">
+  <link rel="stylesheet" href="assets/css/layouts/footer.css">
+  <link rel="stylesheet" href="assets/css/layouts/sidebar.css">
+  
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/components/component.css">
+
+  <link rel="stylesheet" href="assets/css/Pages/contact.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+
+</head>
+
+<body>
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative ">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid ">
+
+          <!-- Brand Tittle  -->
+          <a class="navbar-brand " href="/index.html">Interium</a>
+
+          <!-- nav-items -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto me-auto">
+              <li class="nav-item me-3">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown  me-3">
+                <a class="nav-link dropbtn" onclick="myFunction(event)" href="#">Services
+                  <i class="fa-solid fa-angle-down ps-1"></i>
+                </a>
+                <div class="drop-menu">
+                  <div class="row mx-0">
+                    <div class="col-md-12 p-0">
+                      <div class="menu-container service-menu">
+                        <div class="row">
+                          <div class="col ">
+
+                          
+
+
+
+                            <ul class="text-nowrap p-0">
+                              <li class="border-bottom pb-2">
+                                <a href="#" class="text-decoration-none ">Architecture</a>
+                              </li>
+                              <li class="border-bottom py-2">
+                                <a href="#" class="text-decoration-none ">Interior Work</a>
+                              </li>
+                              <li class="border-bottom py-2">
+                                <a href="#" class="text-decoration-none ">Retail Designs</a>
+                              </li>
+                              <li class="border-bottom py-2">
+                                <a href="#" class="text-decoration-none ">2D/3D Layouts</a>
+                              </li>
+                              <li class="border-bottom py-2">
+                                <a href="#" class="text-decoration-none ">Interior Design</a>
+                              </li>
+                              <li class=" py-2">
+                                <a href="#" class="text-decoration-none ">Decoration art</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+
+                </div>
+              </li>    
+              <!-- dropdown -->
+              <li class="nav-item  me-3">
+                <a class="nav-link dropbtn" onclick="myFunction(event)" href="/project.html">Projects
+                  <!-- <i class="fa-solid fa-angle-down ps-1"></i> -->
+                </a>
+                <!-- <div class="drop-menu">
+                  <div class="row mx-0">
+                    <div class="col-md-12 p-0">
+                      <div class="menu-container">
+                        <div class="row">
+                          <div class="col ">
+
+
+                            <ul class="text-nowrap p-0">
+                              <li class="border-bottom pb-2"><a href="/project.html"
+                                  class="text-decoration-none ">Prestige
+                                  Villa</a>
+                              </li>
+                              <li class="border-bottom py-2"><a href="/project.html" class="text-decoration-none ">Hall
+                                  Theatre
+                                  Building</a>
+                              </li>
+                              <li class="py-2"><a href="/project.html" class="text-decoration-none ">Family
+                                  Appartment</a></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+
+                </div> -->
+              </li>
+
+              <li class="nav-item me-3">
+                <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="/gallery.html">Gallery</a>
+              </li>
+
+            </ul>
+          </div>
+
+          <!-- search icon -->
+          <div class="icons d-flex ms-lg-0  ms-auto ms-sm-auto  ms-md-auto ">
+            <a href="" role="button" class=" toggle-search"><i class="bi bi-search icon "></i></a>
+          </div>
+
+          <!-- collapsible search box -->
+          <div class="searchbar left" id="SearchBox">
+            <div class="card card-body p-0">
+              <input class="search" type="text" placeholder="Search...">
+            </div>
+          </div>
+
+          <a class="cta-btn d-none d-lg-block ms-2" role="button" href="contact.html">Get a Quote!</a>
+
+          <!-- toggle button -->
+          <button id="toggleButton" class="navbar-toggler border-0 " type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#sidebarDrawer" aria-controls="sidebarDrawer">
+            <i id="buttonIcon" class="fas fa-align-left "></i>
+          </button>
+
+
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--drawer offcanvas-->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarDrawer" aria-labelledby="sidebarDrawerLabel">
+
+    <div class="offcanvas-body p-0">
+      <div>
+        <ul class="m-0 p-0 menu-items">
+          <li class="mb-2">
+            <a href="/index.html" clas="py-3 px-5">Home</a>
+          </li>
+          <li class="mb-2">
+            <a href="/project.html" clas="py-3 px-5">Projects</a>
+          </li>
+          <li class="mb-2">
+            <a href="/service.html" clas="py-3 px-5">Services</a>
+          </li>
+          <li class="mb-2">
+            <a href="/gallery.html" clas="py-3 px-5">Gallery</a>
+          </li>
+          <li class="mb-2">
+            <a href="/contact.html" class="py-3 pe-5 accent-color"  >Get a Quote</a>
+          </li>
+
+        </ul>
+        <div class="drawer utility-links d-flex  flex-column gap-3 py-3">
+          <!-- <a class="text-decoration-none text-white " href=""><i class="fa-solid fa-user pe-4"></i>Login</a> -->
+          <ul class="mx-0 px-0 ">
+            <li class="p-0">
+              <a href="" class="pe-3">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <a href="" class="pe-3 ps-0">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="" class="px-0">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section id="tittlebar" class="tittlebar section">
+      <div class="container-fluid p-0 ">
+        <div class="row tittlebar-wrapper position-relative m-0 ">
+          <!-- Tittle -->
+          <div class="tittle-wrapper my-auto text-center">
+            <h1 class="entry-tittle"> Contact Us</h1>
+          </div>
+
+          <!-- Bread Crumps -->
+          <div class="breadcrumb-wrapper">
+            <div class="container">
+              <div class="breadcrumb-inner">
+                <span>
+                  <a href="index.html" class="home">
+                    <i class="bi bi-house-door"></i> &nbsp;&nbsp;Home
+                  </a>
+                </span>
+                <span class="bread-sep">&nbsp; / &nbsp;</span>
+                <span>
+                  <span class="current-page text-nowrap">Contact Us</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-content" class="contact-content section overflow-hidden">
+      <div class="contact-wrapper container">
+        <!-- Top contact boxes -->
+        <div class="row gx-3 top-section">
+          <!-- Contact Box one -->
+          <div class="col-md-6 col-lg-3 contact-box    ">
+            <!-- d-flex flex-column align-items-center justify-content-evenly -->
+            <div class="card  border-0 inner-box  ">
+              <div class="icon-box">
+                <div class="icon position-relative d-flex justify-content-center align-items-center">
+                  <img src="assets/media/images/callicon-contact.png" alt="" class="icon-img" width="35" height="35">
+                </div>
+              </div>
+              <div class="text-box">
+                <h2 class="heading">
+                  Phone Number
+                </h2>
+                <div class="numbers">
+                  +123 456 7890 <br>
+                  +123 998 4567
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Contact Box Two -->
+          <div class="col-md-6 col-lg-3 contact-box    ">
+            <!-- d-flex flex-column align-items-center justify-content-evenly -->
+            <div class="card border-0  inner-box  ">
+              <div class="icon-box">
+                <div class="icon position-relative d-flex justify-content-center align-items-center">
+                  <img src="assets/media/images/emailicon-contact.png.png" alt="" class="icon-img" width="35"
+                    height="35">
+                </div>
+              </div>
+              <div class="text-box">
+                <h2 class="heading">
+                  Email Address
+                </h2>
+                <div class="numbers">
+                  info@abcmail.com<br>
+                  info@domainname.com
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Contact Box Three -->
+          <div class="col-md-6 col-lg-3 contact-box    ">
+            <!-- d-flex flex-column align-items-center justify-content-evenly -->
+            <div class="card  border-0 inner-box  ">
+              <div class="icon-box">
+                <div class="icon position-relative d-flex justify-content-center align-items-center">
+                  <img src="assets/media/images/location.png" alt="" class="icon-img" width="35" height="35">
+                </div>
+              </div>
+              <div class="text-box">
+                <h2 class="heading">
+                  Visit Us On
+                </h2>
+                <div class="numbers">
+                  Brooklyn, Apt <br>
+                  14/A, Miranda City, NYC
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Contact Box Four -->
+          <div class="col-md-6 col-lg-3 contact-box    ">
+            <!-- d-flex flex-column align-items-center justify-content-evenly -->
+            <div class="card  border-0 inner-box  ">
+              <div class="icon-box">
+                <div class="icon position-relative d-flex justify-content-center align-items-center">
+                  <img src="assets/media/images/timeicon-contact.png.png" alt="" class="icon-img" width="35"
+                    height="35">
+                </div>
+              </div>
+              <div class="text-box">
+                <h2 class="heading">
+                  Visit Between
+                </h2>
+                <div class="numbers">
+                  Mon - Sat : 9.00 - 6.00 <br>
+                  Sunday : Closed
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Form section -->
+        <div class="row gx-5 bottom-section">
+          <!-- Left Side img -->
+          <div class="col-md-12 col-lg-4 mb-5">
+            <div class="row left-img-wrapper">
+              <div class="left-img gap-3">
+                <div class="heading">
+                  <h4>Chat With A Live</h4>
+                </div>
+                <div class="text">
+                  <p>Let’s chat with our live experts to get
+                    <br>answer your questions.
+                  </p>
+                </div>
+                <div class="cta">
+                  <a href="" role="button" class="service-readmore-btn">Live chat</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <!-- form   -->
+          <div class="col-md-12 col-lg-8 mb-5">
+            <div class="row">
+              <h4 class="form-heading mb-3">Send Your Message To Us</h4>
+              <form action="" method="post" class="contact-form" data-aos="fade-up" data-aos-delay="500">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="First Name..." required="">
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Last Name..." required="">
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control" name="email" placeholder="Email Address..." required="">
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" name="subject" placeholder="Phone Number..." required="">
+                  </div>
+
+                  <div class="col-md-12">
+                    <textarea class="form-control" name="message" rows="4" placeholder="Enter Message Here..."
+                      required=""></textarea>
+                  </div>
+                  <div class="col-md-12">
+                    <input type="checkbox" id="savemail">
+                    <label for="savemail">Save my name, email in this browser for the next time Send message</label>
+                  </div>
+
+                  <div class="col-md-12 text-start">
+                    <!-- <div class="loading">Loading</div>
+                          <div class="error-message"></div>
+                          <div class="sent-message">Your message has been sent. Thank you!</div> -->
+
+                    <button type="submit" class="contact-btn">Post Comment</button>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contactmap" class="contactmap section position-relative  h-100 m-0 p-0">
+      <div class="container-fluid">
+        <div class="row map-holder">
+          <div class="col    contact-map m-0 p-0 overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+              frameborder="0" style="border:none ;display: block;" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="/index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Interium</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Architecture</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Interior Design</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Decoration Art</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Reatil Designs</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">2D/3D Layouts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="" method="post" class="newsletter-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Interium</strong> <span>All Rights Reserved</span></p>
+
+    </div>
+
+  </footer>
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big ">
+      <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12" ></circle>
+      </svg>
+    </div>
+    
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" ></circle>
+      </svg>
+    </div>
+  </div>
+
+
+  <div id="preloader"></div>
+
+  <script src="/assets//js/jquery.min.js"></script>
+  <script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src= 
+  "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"> 
+      </script> 
+  <script src="https://kit.fontawesome.com/fb1bad45a7.js" crossorigin="anonymous"></script>
+  <script src="assets/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+  <script src="./assets/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="/assets/vendor/slick-1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="assets/js/index.js"></script>
+  <script src="assets/js/carousel.js"></script>
+
+</body>
+
+</html>

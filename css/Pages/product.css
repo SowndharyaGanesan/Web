@@ -1,0 +1,285 @@
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background:color-mix(in srgb,#cda274,transparent 20%);
+  border-radius: 0px
+}
+
+.sortable-tabs{
+    margin-top: 60px;
+}
+
+.sortable-tabs .sortable-wrapper ul{
+  margin: 20px 0px 35px 0px;
+}
+
+.sortable-tabs .sortable-wrapper li.tab-item{
+    list-style-type: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 10px 25px;
+}
+
+.sortable-tabs .sortable-wrapper li.tab-item a.tab-link{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: latoRegular, Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+.sortable-tabs .sortable-wrapper li.tab-item.active {
+    background-color:#cda274;
+    color: #fff;
+  }
+
+  /* Tab Hover effect */
+  .sortable-tabs .sortable-wrapper li.tab-item:hover,
+  .sortable-tabs .sortable-wrapper li.tab-item:hover a.tab-link {
+    background-color:#cda274;
+    color: #fff;
+  }
+
+  .sortable-tabs .sortable-wrapper li.tab-item.active a.tab-link{
+    color: #fff;
+  }
+
+.sortable-tabs .project-card{
+  transform: scale(0.5);
+  transform-origin: bottom;
+  display: none;
+  margin-bottom: 25px;
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+   
+   
+.sortable-tabs .project-card.show {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+    animation: showAnimation 0.3s ease-out;
+  }
+  
+
+
+  /*animation for showing elements */
+@keyframes showAnimation {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/*class for hiding with animation */
+.sortable-tabs .project-card.hiding {
+  animation: hideAnimation 0.3s ease-out;
+  opacity: 0;
+  display: none;
+  transform: scale(0.8);
+}
+ 
+  
+
+/* Custom animation for hiding elements */
+@keyframes hideAnimation {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+/* Tittle bar design */
+.tittlebar.section .tittlebar-wrapper{
+  height: 370px;
+  width: 100%;
+  background-image: url("/assets/media/images/Testi-bg.jpg") !important ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+
+
+    
+
+
+
+/* --------------------
+Project card design
+------------------- */
+.project-card .card-box .project-box .project-item .featured-img-wrapper{
+  transform: scale(1);
+  position: relative;
+}
+
+/* Project card image */
+.project-card .card-box .project-box .project-item .featured-img-wrapper img{
+  height: auto;
+  max-width: 100%;
+  /* transform: scale(1.2); */
+  transition: transform 0.5s ease-in-out;
+}
+
+/* project card inner design  overlay effect*/
+.project-card .card-box .project-box .inner-item{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgba(24, 24, 24, .73);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out, left 0.4s ease-in-out;
+}
+
+/* project box border Y */
+.project-card .card-box .project-box .inner-item::before{
+  position: absolute;
+  content: '';
+  top: 20px;
+  right: 15px;
+  bottom: 20px;
+  left: 15px;
+  border-top: 1px solid rgba(255, 255, 255, .5);
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  pointer-events: none;
+  transform: scale(0);
+  transform-origin: 0 0;
+  opacity: 1;
+  transition: opacity 0.35s, transform 0.30s;
+}
+  
+.project-card .card-box article.project-box:hover .inner-item::before{
+  transform: scale(1);
+}
+
+/* project box border x */
+.project-card .card-box .project-box .inner-item::after{
+    position: absolute;
+    content: '';
+    top: 15px;
+    right: 20px;
+    bottom: 15px;
+    left: 20px;
+    border-right: 1px solid rgba(255, 255, 255, .5);
+    border-left: 1px solid rgba(255, 255, 255, .5);
+    pointer-events: none;
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: 0 0;
+    transition: opacity 0.35s, transform 0.30s;
+}
+
+.project-card .card-box article.project-box:hover .inner-item::after{
+  transform: scale(1);
+}
+
+
+/* Project box inner content text */
+.project-card .card-box .project-box .inner-item .project-box-content .category{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  right: 40px;
+  opacity: 1;
+  transition: all 0.8s 0.2s;
+}
+
+/* Project box tittle */
+.project-card .card-box .project-box .inner-item .project-box-content .category .box-tittle h4{
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 30px;
+  position: relative;
+  text-align: left;
+  font-family: latoRegular, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+  
+/* Project box tittle inner anchor tag */
+.project-card .card-box .project-box .inner-item .project-box-content .category .box-tittle h4 a{
+  color:#fff ;
+  transition: all 0.3s ease;
+}
+  
+
+
+/* Project box tittle hover animation */
+.project-card .card-box .project-box .inner-item .project-box-content .category .box-tittle h4:hover a{
+  color: #cda274;
+}
+
+/* project box text */
+.project-card .card-box .project-box .inner-item .project-box-content .category .box-tittle p{
+  color: rgba(255, 255, 255, .70);
+  letter-spacing: 0.3px;
+  line-height: 27px;
+  font-size: 15px;
+}
+
+/* project box cta wrapper */
+.project-card .card-box .project-box .inner-item .project-box-content .project-box-cta{
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  opacity: 1;
+  transition: all 0.8s 0.2s;
+}
+
+/* Read More button */
+.project-card .card-box .project-box .inner-item .project-box-content .project-box-cta a.project-readmore-btn{
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 15px;
+   font-family: latoRegular, Arial, Helvetica, sans-serif;
+   color: #fff;
+   text-transform: capitalize;
+   transition: all 0.3s ease 0s;
+   outline: none;
+   text-decoration: none;
+   transition: all 0.3s ease 0s;
+}
+   
+
+/* project box  readmore plus icon */
+.project-card .card-box .project-box .inner-item .project-box-content .project-box-cta i{
+  vertical-align: middle;
+  font-weight:bold;
+   font-size: 17px;
+   color: #fff;
+   transition: all 0.3s ease 0s;
+}
+
+/* project Read More button hover animation */
+.project-card .card-box .project-box .inner-item .project-box-content .project-box-cta:hover a.project-readmore-btn,
+.project-card .card-box .project-box .inner-item .project-box-content .project-box-cta:hover i{
+  color: #cda274;
+}
+
+/* project box hover animation */
+.project-card .card-box article.project-box:hover .project-item .featured-img-wrapper img{
+  transform: scale(1.2);
+}
+
+.project-card .card-box article.project-box:hover .inner-item{
+  opacity: 1;
+}
+

@@ -1,0 +1,386 @@
+/* Tittle bar design */
+/* .tittlebar.section .tittlebar-wrapper{
+    height: 370px;
+    width: 100%;
+    background-image: url("/assets/media/images/Testi-bg.jpg") !important ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+  } */
+
+.service-content.section{
+    margin-top: 30px;
+}
+
+/* servise list ul */
+.service-content.section .services-wrapper .services-sidebar  .srvice-list ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* All li inside ul */
+.service-content.section .services-wrapper .services-sidebar  .srvice-list ul>li{
+    padding: 0 0 15px 0;
+}
+
+/* Anchor tag inside li */
+.service-content.section .services-wrapper .services-sidebar  .srvice-list ul .tab-item a.tab-link{
+    display: block;
+  padding: 13px 15px;
+  position: relative;
+  font-size: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 7px 0 rgb(43 52 59 / 6%);
+  font-family: latoRegular, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  z-index: 1;
+}
+
+.service-content.section .services-wrapper .services-sidebar  .srvice-list ul .tab-item a.tab-link.active{
+    background-color: #938f8f;
+}
+
+.service-content.section .services-wrapper .services-sidebar  .srvice-list ul .tab-item a.tab-link::before{
+    content: "";
+    width: 100%;
+    left: 0;
+    bottom: 50%;/*-------------*/
+    background: #eaeaea;
+    background-color: #cda274;
+    height: 0;/*-------------*/
+    position: absolute;
+    transition: all 0.4s cubic-bezier(.645,.045,.355,1);
+    
+    z-index: -1;
+}
+
+.service-content.section .services-wrapper .services-sidebar  .srvice-list ul .tab-item a.tab-link:hover::before{
+    
+    bottom: 0%;
+    height: 100%;
+}
+.service-content.section .services-wrapper .services-sidebar  .srvice-list ul .tab-item a.tab-link:hover{
+    color: #fff;
+}
+
+
+/* Sidebar outer */
+.service-content.section #sidebar-left{
+    padding: 0px 15px 70px;
+    margin-top: 0px;
+    overflow: hidden;
+}
+    
+/* aside inner */
+.service-content.section aside#sidebar-left .services-sidebar{
+   position: relative;
+   margin: 35px 0 35px;
+   padding: 35px 25px 30px;
+   background-color: #f7f7f7;
+}
+   
+
+.service-content.section #sidebar-left .services-sidebar h3.servicebar-tittle{
+   position: relative;
+   padding-bottom: 12px;
+   display: block;
+   border-bottom: 1px solid rgba(0, 0, 0, .09);
+   margin-bottom: 20px;
+   font-family: latoRegular, Arial, Helvetica, sans-serif;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 28px;
+   color: #232323;
+}
+
+
+ .services-sidebar h3.servicebar-tittle::after{
+   
+   content: "";
+   position: absolute;
+   display: block;
+   height: 3px;
+   width: 70px;
+   left: 0;
+   bottom: 0px;
+   background-color: #cda274;
+   transition: all 0.5s ease 0s;
+}
+
+
+
+.service-content.section .services-wrapper .services-sidebar:hover h3.servicebar-tittle::after{
+    width: 100%;
+}
+
+.services-sidebar:hover h3.servicebar-tittle::after {
+    width: 100%; /* Expand the width on hover */
+  }
+
+
+/* content area Design */
+
+.service-content.section .content-area .content-wrapper section.hero-section .heading h3.heading-tittle{
+    font-family: latoRegular, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #232323;
+}
+
+.service-content.section .content-area .content-wrapper section.hero-section .heading .img-wrapper{
+    padding: 20px 0px 0px 0px;
+    overflow: hidden;
+}
+
+.service-content.section .content-area .content-wrapper section.hero-section .heading .img-wrapper img{
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+    transition: all .2s linear ;
+    /* display: inline-block; */
+}
+
+.service-content.section .content-area .content-wrapper section.hero-section .heading .img-wrapper:hover img{
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+/* --------------------
+Image flash animation
+-------------------- */
+.service-content.section .content-area .content-wrapper section.hero-section .heading .img-wrapper::after{
+    position: absolute;
+    top: 0;
+    left: -50%;
+    z-index: 2;
+    display: block;
+    content: "";
+    width: 20%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-20deg);
+    opacity: 0.5;
+    transition: left 1s ease-in-out;
+}
+
+.service-content.section .content-area .content-wrapper section.hero-section .heading .img-wrapper:hover::after{
+    left:100%;
+    width: 50%;
+} 
+
+.Service-Employees .emp-img img{
+    width:280px;
+    height: 330px;
+    
+}
+
+
+#service-content .content-area .content-wrapper p{
+    font-family: latoRegular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: 0.3px;
+    color: #777777;
+}
+
+#service-content .content-area .content-wrapper h3.heading-tittle{
+    font-family: latoRegular, Arial, Helvetica, sans-serif;
+   font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: #232323;
+}
+
+#service-content .content-area .content-wrapper .Service-Employees .content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#service-content .content-area .content-wrapper .Service-Employees .content-text a{
+    align-self: flex-start;
+}
+
+
+.top-section p u a{
+    color: #cda274;
+}
+
+.Bullets .bullet-box-heading h2{
+    font-size: 21px;
+    line-height: 30px;
+    position: relative;
+    font-family: latoRegular, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+
+.Bullets .bullet-box-heading .sub-text{
+    font-family: latoRegular, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: 0.3px;
+    color: #777777;
+    
+}
+
+.Bullets .bullet-box-heading .icon i{
+    font-weight: 400;
+    font-size: 40px;
+    color: #cda274;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+    
+  
+
+.Bullets .bullet-box-heading .icon{
+    /* align-self: self-start; */
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Set the desired height of the div */
+}
+
+.Bullets .bullet-points .about-list-items .about-list-item {
+    list-style-type: none;
+    font-family: latoRegular, Tahoma, Geneva, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: 0.3px;
+    color: #777777;
+    padding-bottom: 5px;
+    display: flex;
+    
+    
+  }
+  
+  .Bullets .bullet-points .about-list-items .about-list-item-icon{
+    color: #cda274;
+  }
+  
+  .Bullets .bullet-points .about-list-items .about-list-item-text {
+    color: #181818;
+    padding-left: 8px;
+    
+    
+}
+
+.Bullets .bullet-points img{
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+#service-content .content-area .content-wrapper .top-section span.since{
+    color: #cda274;
+}
+
+#service-content .content-area  .top-section p u a{
+    color: #cda274;
+}
+    
+
+
+ .two-boxes .box-wrap .box{
+    padding: 47px 25px 32px 40px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .09);
+}
+
+
+  .two-boxes .box-wrap .box .inner-box .inner-box-text h2.inner-box-heading{
+    line-height: 30px;
+    position: relative;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+ .two-boxes .box-wrap .box .inner-box .inner-box-text .inner-box-body{
+    padding-top: 9px;
+    padding-bottom: 17px;
+}
+
+/*  .two-boxes .box-wrap .box .inner-box .inner-box-btn{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+   
+    transform: translateY(10px);
+    transition: all .6s ease;
+   
+} */
+
+ .two-boxes .box-wrap .box .inner-box .inner-box-btn a{
+   /* color: #cda274; */
+   text-decoration: none;
+   text-transform: capitalize;
+   font-weight: 700;
+   color: rgba(0, 0, 0, 1);
+   transition: all 0.3s ease 0s;
+}
+
+ .two-boxes .box-wrap .box .inner-box .inner-box-btn a:hover{
+    color: #cda274;
+}
+
+/* animation */
+
+ .two-boxes .box-wrap .box .inner-box .inner-box-btn{
+    transform: translateY(0px);
+    transition: all .6s ease;
+    opacity: 0;
+}
+
+ .two-boxes .box-wrap .box:hover .inner-box .inner-box-btn{
+    transform: translateY(-50px);
+    opacity: 1;
+}
+ .two-boxes .box-wrap .box .inner-box .inner-box-text{
+    transform: translateY(0px);
+    transition: all .6s ease;
+    opacity: 1;
+}
+
+ .two-boxes .box-wrap .box:hover .inner-box .inner-box-text{
+    transform: translateY(-50px);
+    opacity: 1;
+}
+ .two-boxes .box-wrap .box .inner-box .inner-box-icon {
+    transition: all .6s ease;
+    opacity: 1;
+    transform: translateY(0px);
+    transform-origin: top;
+    
+    
+}
+
+ .two-boxes .box-wrap .box:hover .inner-box .inner-box-icon{
+    transform: translateY(-10px);
+    opacity: 0;
+   
+}
+
+
+
+
+
+
+    
+
+  
+
+  
+  
