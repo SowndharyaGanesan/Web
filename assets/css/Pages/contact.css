@@ -1,0 +1,342 @@
+body{
+    /* overflow-x: hidden; */
+}
+
+.tittlebar.section{
+    padding-top: 40px;
+}
+.tittlebar.section .tittlebar-wrapper{
+    height: 370px;
+    width: 100%;
+    background-image: url("/assets/media/images/title-bg-contact.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+/* Tittlebar overlay effect */
+.tittlebar.section .tittlebar-wrapper::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.41);
+}
+
+/* Tittle wrapper */
+.tittlebar.section .tittlebar-wrapper .tittle-wrapper{
+    z-index: 1;
+}
+    
+/* Tittle */
+.tittlebar.section .tittlebar-wrapper .tittle-wrapper h1.entry-tittle{
+    font-family: latoRegular, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 49px;
+    line-height: 59px;
+    color: whitesmoke;
+}
+
+/* --------------------
+Bread Crumb design 
+-----------------------*/
+
+.tittlebar.section .tittlebar-wrapper .breadcrumb-wrapper{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: 110px;
+}
+
+.tittlebar.section .tittlebar-wrapper .breadcrumb-wrapper .container{
+    display: inline-block;
+    padding: 14px 15px;
+    width:auto;
+    text-align: left;
+    background-color: white;
+    line-height:20px;
+}
+    
+   
+
+    
+
+.tittlebar.section .tittlebar-wrapper .breadcrumb-wrapper .container .breadcrumb-inner span a.home{
+    font-size: 15px;
+    text-decoration: none;
+    color: #232323;
+    font-weight: 400;
+    font-family: latoRegular, Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    text-align: left;
+}
+
+.tittlebar.section .tittlebar-wrapper .breadcrumb-wrapper .container .breadcrumb-inner span a.home i{
+    font-size: 18px
+}
+
+.tittlebar.section .tittlebar-wrapper .breadcrumb-wrapper .container .breadcrumb-inner span.current-page{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: latoRegular, Arial, Helvetica, sans-serif;
+    color:#cda274 ;
+    text-align: left
+    
+
+}
+    
+/* -----------------------------
+contact content
+----------------------------- */
+
+.contact-content.section .contact-wrapper{
+  
+     margin:  0 auto !important;
+}
+
+.contact-content.section .contact-wrapper .top-section{
+    padding: 100px 0px 75px 0px;
+}
+
+.contact-content.section .contact-wrapper .top-section .contact-box{
+    /* width: 270px; */
+    padding: 0px 8px 33px;
+    position: relative;
+    /* box-shadow: 0 0 7px 0 rgba(43, 52, 59, .08); */
+   
+}
+
+.contact-content.section .contact-wrapper .top-section .contact-box .inner-box{
+    box-shadow: 0 0 7px 0 rgba(43, 52, 59, .08);
+    padding: 0px 15px 15px ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+/* ------------------------------
+card bottom border and animation */
+.contact-content.section .contact-wrapper .top-section .contact-box .inner-box::after{
+    transform: scaleX(0);
+    transition: transform 800ms ease-in-out;
+    position: absolute;
+    content: '';
+    border-bottom: 5px solid;
+    border-bottom-color: #cda274;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.contact-content.section .contact-wrapper .top-section .contact-box:hover .inner-box::after{
+    transform: scaleX(1);
+}
+
+
+   
+.contact-content.section .contact-wrapper .top-section .contact-box .icon-box{
+    background-color: #cda274;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.contact-content.section .contact-wrapper .top-section .contact-box .icon-box .icon{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+ 
+/* ----------------------------
+Contact box img hover animation */
+.contact-content.section .contact-wrapper .top-section .contact-box .icon-box .icon img{
+    transition: all 500ms ease;
+}
+
+.contact-content.section .contact-wrapper .top-section .contact-box:hover .icon img.icon-img{
+    transform: scaleX(-1);
+}
+
+
+/* ----------------------------
+Contact box top ribbon design*/   
+.contact-content.section .contact-wrapper .top-section .contact-box .inner-box .icon-box .icon::before{
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 60px;
+    border-width: 0 13px 12px 0;
+    border-style: solid;
+    border-color: #cda274;
+    border-right-color: transparent !important;
+    border-left-color: transparent !important;
+    display: block;
+    transition: all .4s;
+    opacity: .7;
+}
+
+.contact-content.section .contact-wrapper .top-section .contact-box .inner-box .icon-box .icon::after{
+    position: absolute;
+    content: "";
+    right: 0;
+    height: 11px;
+    width: 100%;
+    top: -11px;
+    z-index: -4;
+    transition: all .5s;
+    background-color: #cda274;
+    transform: scale(1, 1.2);
+}
+
+.contact-content.section .contact-wrapper .top-section .contact-box .text-box{
+    /* padding-top: 10px; */
+}
+
+.contact-content.section .contact-wrapper .top-section .contact-box .text-box h2.heading{
+    font-size: 21px;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-family: latoRegular, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact-content.section .contact-wrapper .top-section .contact-box .text-box .numbers{
+    padding-top: 10px;
+    color: #777777;
+    font-family: latoRegular, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 27px;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+   
+
+/* Bottom section design */
+
+.contact-content.section .contact-wrapper .bottom-section{
+    padding: 0px 0px 0px 0px;
+}
+
+
+/* Left Side Image design contact form*/
+
+.contact-content.section .contact-wrapper .bottom-section .left-img-wrapper .left-img{
+    width: 100%;
+    height: auto;
+    background-image: url("/assets/media/images/contactform-img.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 295px 40px 55px 40px;
+    font-family: latoRegular, Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
+/* left img Heading  */
+.contact-content.section .contact-wrapper .bottom-section .left-img-wrapper .left-img .heading h4{
+   font-size: 21px ;
+   font-weight: 700;
+   
+}
+
+/* Contact Form Messages
+------------------------------*/
+
+.bottom-section .contact-form input[type=text],
+.bottom-section .contact-form input[type=email],
+.bottom-section .contact-form textarea {
+  font-size: 15px;
+  padding: 15px 30px;
+  box-shadow: none;
+  border-radius: 0;
+  color:#777777;
+  background-color: #ffffff;
+  border-color: color-mix(in srgb, #777777, transparent 70%);
+}
+
+.bottom-section .contact-form input[type=text]:focus,
+.bottom-section .contact-form input[type=email]:focus,
+.bottom-section .contact-form textarea:focus {
+  border-color: #cda274;
+}
+
+.bottom-section .contact-form input[type=text]::placeholder,
+.bottom-section .contact-form input[type=email]::placeholder,
+.bottom-section .contact-form textarea::placeholder {
+  color: color-mix(in srgb, #777777, transparent 30%);
+}
+
+.bottom-section .contact-form input[type=checkbox] +label{
+    color: #777777;
+}
+
+.bottom-section .contact-form button[type=submit] {
+  color: #ffffff;
+  background: #cda274;
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 0px;
+}
+
+.bottom-section .contact-form button[type=submit]:hover {
+  background: color-mix(in srgb, #cda274, transparent 20%);
+}
+
+
+.bottom-section h4.form-heading{
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 700;
+    font-family: latoRegular, Arial, Helvetica, sans-serif;
+}
+
+/* Map */
+.contactmap.section .map-holder .contact-map iframe{
+    width: 100%;
+    height: 600px;
+    min-height: 350px;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+
+
+
+
+    
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+  
